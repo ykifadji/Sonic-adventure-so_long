@@ -58,7 +58,7 @@ all : $(NAME)
 $(NAME): $(OBJS_MAIN) $(OBJS_BONUS)
 	@echo "	$(PURPLE)$(UNDERLINE)Compiling...\033[0m"
 	@$(MAKE) -C ./libft/
-	@$(CC) $(CFLAGS) $(OBJS) -lmlx -framework OpenGL -framework AppKit ./libft/libft.a -o $(NAME)
+	@$(CC) $(CFLAGS) $(OBJS) -L./minilibx -lmlx -framework OpenGL -framework AppKit ./libft/libft.a -o $(NAME)
 	@clear
 	@echo "	$(PINK)$(BOLD)Compiled ! \033[0m"
 

@@ -6,7 +6,7 @@
 /*   By: ykifadji <ykifadji@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/28 10:51:53 by ykifadji          #+#    #+#             */
-/*   Updated: 2023/03/24 08:25:36 by ykifadji         ###   ########.fr       */
+/*   Updated: 2024/09/23 18:52:08 by ykifadji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,10 +77,8 @@ void	check(char *str, t_data *game)
 int	elements(t_data *game, char *argv)
 {
 	int		fd;
-	int		i;
 	char	*str;
 
-	i = 0;
 	game->p = 0;
 	game->e = 0;
 	game->c = 0;
