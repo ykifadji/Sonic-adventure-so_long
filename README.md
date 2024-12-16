@@ -34,7 +34,7 @@ Ce projet m'a permis de découvrir et de maîtriser plusieurs compétences techn
 ## ⚙️ Comment lancer le projet
 1. Clonez ce dépôt :  
    ```bash
-   git clone https://github.com/YaniKifadji/sonic-adventure-so_long.git
+   git clone git@github.com:ykifadji/so_long.git
    cd sonic-adventure-so_long
 2.	Compilez le projet avec le Makefile :
      ```bash
