@@ -20,10 +20,7 @@ Ce projet m'a permis de découvrir et de maîtriser plusieurs compétences techn
 
 ## 🖼️ Aperçus du projet
 ### Capture d'écran principale
-*(Ajoutez une image montrant le gameplay ici)*
-
-### Vidéo de démonstration
-*(Ajoutez un lien ou une vidéo ici pour présenter le projet en action)*
+![Gameplay Sonic](image/sonic-gameplay.png "Capture d'écran du jeu Sonic")
 
 ## 🌟 Bonus ajoutés
 - **Animations de sprites** : Sonic et les ennemis sont animés pour donner vie au jeu.
