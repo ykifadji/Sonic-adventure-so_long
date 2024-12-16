@@ -19,7 +19,7 @@ Ce projet m'a permis de découvrir et de maîtriser plusieurs compétences techn
   - Des ennemis patrouillent certaines zones. Évitez-les ou vous perdez la partie !
 
 ## 🖼️ Aperçus du projet
-### Capture d'écran principale
+
 ![Gameplay Sonic](image/sonic-gameplay.png "Capture d'écran du jeu Sonic")
 
 ## 🌟 Bonus ajoutés
