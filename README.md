@@ -38,10 +38,10 @@ Ce projet m'a permis de découvrir et de maîtriser plusieurs compétences techn
    cd sonic-adventure-so_long
 2.	Compilez le projet avec le Makefile :
      ```bash
-     make
+     make bonus
 3.	Lancez le jeu avec une carte :
     ```bash
-    ./so_long maps/level1.ber
+    ./so_long ./maps/map_bonus.ber
 4.	Contrôlez Sonic avec W, A, S, D et amusez-vous !
 
 ## 🛠️ Ressources utilisées
