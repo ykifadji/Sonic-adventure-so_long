@@ -6,13 +6,13 @@
 /*   By: ykifadji <ykifadji@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/18 07:25:00 by ykifadji          #+#    #+#             */
-/*   Updated: 2023/03/23 12:47:25 by ykifadji         ###   ########.fr       */
+/*   Updated: 2024/12/17 08:06:35 by ykifadji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
-static void	floor(t_data *game, int m)
+static void	floor_sonic(t_data *game, int m)
 {
 	game->img.path = "./sprites/grass.xpm";
 	game->img.path = mlx_xpm_file_to_image(game->mlx.ptr, game->img.path, \
@@ -72,7 +72,7 @@ static void	sprites_moov(t_data *game, int m)
 
 void	perso_moov(t_data *game, int m)
 {
-	floor(game, m);
+	floor_sonic(game, m);
 	sprites_exit(game, m);
 	sprites_moov(game, m);
 	game->img.path = mlx_xpm_file_to_image(game->mlx.ptr, \

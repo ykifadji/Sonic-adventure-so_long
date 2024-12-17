@@ -1,4 +1,3 @@
-
 SRCS = ./parsing/parsing.c \
 		./parsing/path.c \
 		./parsing/so_long_utils.c \
@@ -49,6 +48,16 @@ ifdef DEBUG
 CFLAGS += -fsanitize=address -g3
 endif
 
+OS := $(shell uname)
+
+ifeq ($(OS), Darwin)
+	MLX_DIR = minilibx-opengl
+	MLX_FLAGS = -L$(MLX_DIR) -lmlx -framework OpenGL -framework AppKit
+else
+	MLX_DIR = minilibx-linux
+	MLX_FLAGS = -L$(MLX_DIR) -lmlx -lX11 -lXext -lm
+endif
+
 .c.o:
 	@$(CC) $(CFLAGS) -c -I ./inc/ $< -o $(<:.c=.o)
 
@@ -58,8 +67,9 @@ all : $(NAME)
 $(NAME): $(OBJS_MAIN) $(OBJS_BONUS)
 	@echo "	$(PURPLE)$(UNDERLINE)Compiling...\033[0m"
 	@$(MAKE) -C ./libft/
-	@$(CC) $(CFLAGS) $(OBJS) -L./minilibx -lmlx -framework OpenGL -framework AppKit ./libft/libft.a -o $(NAME)
-	@clear
+	@$(MAKE) -C $(MLX_DIR)
+	@$(CC) $(CFLAGS) $(OBJS) $(MLX_FLAGS) ./libft/libft.a -o $(NAME)
+	# @clear
 	@echo "	$(PINK)$(BOLD)Compiled ! \033[0m"
 
 debug:
@@ -70,6 +80,7 @@ bonus:
 
 clean:
 	@$(MAKE) clean -C ./libft/
+	@$(MAKE) clean -C $(MLX_DIR)
 	@rm -rf $(OBJS_MAIN) $(OBJS_BONUS)
 	@echo "	$(RED)Deleted file .o \033[0m"
 

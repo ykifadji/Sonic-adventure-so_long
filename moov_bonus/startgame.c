@@ -6,7 +6,7 @@
 /*   By: ykifadji <ykifadji@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/25 16:00:50 by ykifadji          #+#    #+#             */
-/*   Updated: 2023/03/28 10:54:21 by ykifadji         ###   ########.fr       */
+/*   Updated: 2024/12/17 08:32:42 by ykifadji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	startgame(t_data *game, int keycode)
 {
-	if ((keycode == 36 || keycode == 76) && game->hook.k <= 1)
+	if ((keycode == 36 || keycode == 76 || keycode == 65293) && game->hook.k <= 1)
 	{
 		game->img.path = "./sprites/startgame.xpm";
 		game->img.path = mlx_xpm_file_to_image(game->mlx.ptr, game->img.path, \
@@ -34,7 +34,7 @@ void	startgame(t_data *game, int keycode)
 
 void	endgame(t_data *game, int keycode)
 {
-	if ((keycode == 36 || keycode == 76) && game->hook.k <= 1)
+	if ((keycode == 36 || keycode == 76 || keycode == 65293) && game->hook.k <= 1)
 	{
 		game->start = 0;
 		game->img.path = "./sprites/endgame.xpm";

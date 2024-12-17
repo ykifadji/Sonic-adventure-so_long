@@ -6,7 +6,7 @@
 /*   By: ykifadji <ykifadji@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/25 08:13:19 by ykifadji          #+#    #+#             */
-/*   Updated: 2024/09/23 18:58:51 by ykifadji         ###   ########.fr       */
+/*   Updated: 2024/12/17 08:03:22 by ykifadji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <fcntl.h>
-# include <../minilibx/mlx.h>
+# include <../minilibx-opengl/mlx.h>
+# include <../minilibx-linux/mlx.h>
 # include "../libft/inc/get_next_line.h"
 # include "../libft/inc/ft_printf.h"
 # include "../libft/inc/libft.h"
